@@ -1,9 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+// import Layout from '../layouts/Layout.astro';
 const pageTitle = "Blog Page";
 ---
 
-<Layout title="Welcome to Astro.">
+<BaseLayout>
 	<main>
 		<h1>{pageTitle}</h1>
     <h1>My Astro Learning Blog</h1>
@@ -14,7 +15,7 @@ const pageTitle = "Blog Page";
       <li><a href="/posts/post-3/">Post 3</a></li>
     </ul>
 	</main>
-</Layout>
+</BaseLayout>
 
 <style>
 	main {

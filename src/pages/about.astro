@@ -1,5 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+// import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 const pageTitle = "About Me Sha!!!";
 
@@ -18,7 +19,7 @@ const skillColor = "navy";
 ---
 
 
-<Layout title="Welcome to Astro.">
+<BaseLayout>
 	<main>
 		<h1>{pageTitle}</h1>
     <h2>... and my new Astro site!</h2>
@@ -45,7 +46,7 @@ const skillColor = "navy";
 
     {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 	</main>
-</Layout>
+</BaseLayout>
 
 <style define:vars={{skillColor}}>
 	main {
