@@ -1,6 +1,30 @@
-<div class="nav-links">
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/blog">Blog</a>
-  <a href="/tags/">Tags</a>
+<div class="nav-links flex">
+  <div>
+    <a href="/" class="menu-item initials">OS.</a>
+  </div>
+  <div class="flex menu-item-wrapper">
+    <a href="/projects" class="menu-item">Projects</a>
+    <a href="/resume" class="menu-item">Resume</a>
+    <a href="/contact" class="menu-item">Contact</a>
+  </div>
 </div>
+<style>
+  .nav-links {
+    justify-content: space-between;
+    width: var(--max-width);
+    margin: auto;
+    align-items: center;
+  }
+  .nav-links .menu-item {
+    color: white;
+    letter-spacing: 0.1rem;
+    font-weight: 200;
+  }
+  .initials {
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+  }
+  .menu-item-wrapper {
+    gap: 1.5rem
+  }
+</style>
